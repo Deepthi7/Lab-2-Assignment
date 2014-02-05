@@ -1,0 +1,52 @@
+<script src="http://maps.googleaps.com/maps/api/js?sensor=true">
+    
+</script>
+<div data-role="page" theme="a" id="Main page">
+    <div data-role="header">
+         <h1>Google Map Services and Weather services</h1>
+
+    </div>
+    <div data-role="content">
+        <p><a href="#Google map" data-role="button"> Map Directions 
+           </a>
+
+        </p> <a href="#Weather services" data-role="button"> Weather services</a>
+
+    </div>
+    <div data-role="footer">
+         <h1 align="center"></h1>
+
+    </div>
+</div>
+<div data-role="page" id="Google map">
+    <div data-role="header"> <a data-rel="back" data-icon="Home">home</a>
+
+         <h1>Map directions</h1>
+
+    </div>
+    <div data-role="content">
+        <p>Directions</p>
+        <button id="Show directions">Get Directions</button>
+        <div id="map_canvas" style="height: 400px; width: 400px"></div>
+    </div>
+</div>
+<div data-role="page" id="Weather services">
+    <div data-role="header">
+         <a data-rel="back" data-icon="home">Home</a>
+         <h1>Geocoding Service </h1>
+ <p><a href="#WeatherReportPage" data-role="button"> Get Weather Report Here..</a>
+        </p>
+        </div>
+    </div>
+    
+    <div data-role="page" id="WeatherReportPage">
+        <div data-role="header">
+        <a data-rel="back" data-icon="home">Home</a>
+        <h1> Current Weather conditions</h1>
+        </div>
+    <div data-role="content" id="weatherModule">
+        <p id="currentConditions"></p>
+        <div id="currentIcon"></div>
+    </div>
+</div>
+    
